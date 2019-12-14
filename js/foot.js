@@ -1,0 +1,15 @@
+document.writeln("<div class=\'foot\'>");
+document.writeln("        <div class=\'foot_box\'>");
+document.writeln("            <div>");
+document.writeln("                <p>便捷入口</p>");
+document.writeln("                <span><a href=\'nat_economy.html\'>NAT生态经济体</a></span>");
+document.writeln("                <span><a href=\'strategy.html\'>战略规划</a></span>");
+document.writeln("                <span><a href=\'scenarios.html\'>应用场景</a></span>");
+document.writeln("            </div>");
+document.writeln("            <div>");
+document.writeln("                <p>联系我们</p>");
+document.writeln("                <span>企业地址：新加坡贝雅勒巴路60号贝雅勒巴广场08-55号</span>");
+document.writeln("                <span>Address：60 PAYA LEBAR ROAD#08-55 PAYA LEBAR SQUARE SINGAPORE</span>");
+document.writeln("            </div>");
+document.writeln("        </div>");
+document.writeln("    </div>");

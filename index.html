@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NAT--幸福宇宙中的Token--Token中的标杆&nbsp;&nbsp;&nbsp;&nbsp;</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <script language="javascript" type="text/javascript" src="./js/head.js"></script>
+    <div class="layui-carousel" id="test1">
+        <div carousel-item>
+            <div><img src="./img/banner1.jpg" alt=""></div>
+            <div><img src="./img/banner2.jpg" alt=""></div>
+            <div><img src="./img/banner3.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_box">
+            <div class="aboutNAT">
+                <p class="title">关于NAT基金会</p>
+                <div>NAT（新加坡）基金会，英文名称： NAT FOUNDATION PTE.LTD. ，总部设在新加坡，是由世界幸福产业控股集团有限公司投资成立的组织。基金会致力于区块链技术应用、数字化资产研究，推动区块链技术在中国地区的产业化发展。NAT基金会已锚定中国一家创始生态合伙人约50亿以上美元实物资产作为数字资产通证，计划发行数字通证总量6,193,690,081，预计2020年元旦前后在ZG.com上链交易。</div>
+            </div>
+            <div class="certificate">
+                <img src="./img/announcement.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="./js/foot.js"></script>
+</body><!-- onload="newText()"-->
+</html>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="layui/layui.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/public.js"></script>
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%' //设置容器宽度
+            ,height: '450px'
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>

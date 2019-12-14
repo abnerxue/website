@@ -1,0 +1,122 @@
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    background: none;
+    transition: all 1s;
+}
+.HeadStyle{
+    background: #0E042E;
+    transition: all 1s;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+.bgbox{
+    padding-top: 80px;
+    background: url(../img/new_centerbg.png) no-repeat;
+    height: 529px;
+    background-size: 100% 100%;
+    background-size: cover;
+    min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.bgbox p{
+    font-size: 55px;
+    color: rgba(250,250,250,0.8);
+}
+.content{
+    background-color: #F7F8FC;
+    overflow: visible;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.content_box{
+    width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px 72px;
+    background: #fff;
+    box-shadow: 0px 3px 6px #B2B2B2;
+    box-sizing: border-box;
+}
+
+.detail_title{
+    overflow: hidden;
+    border-bottom:1px solid #e8e8e8;
+    padding: 0 8px;
+}
+.detail_title p{
+    font-size:28px;
+    font-family:PingFang SC;
+    font-weight:500;
+    line-height:40px;
+    color:#0E042E;
+    margin-bottom: 16px;
+}
+.detail_title span{
+    height:25px;
+    font-size:18px;
+    font-family:PingFang SC;
+    font-weight:400;
+    line-height:25px;
+    color:#b8b5c1;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.detail_content{
+    padding: 30px 8px;
+    font-family:PingFang SC;
+    font-weight:400;
+    line-height:33px;
+    color:#0e042e;
+}
+.detail_content p{
+    font-size:16px;
+    margin-bottom: 24px;
+    font-family:PingFang SC;
+    font-weight:400;
+    line-height:33px;
+    color:#0E042E;
+}
+.detail_content img{
+    width: 100%;
+}
+.detail_content h6{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.detail_content p:last-child{
+    margin-bottom: 60px;
+}
+.detail_foot{
+    padding: 30px 5px;
+    border-top: 1px solid #E8E8E8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail_foot p{
+    font-size:24px;
+    font-family:PingFang SC;
+    font-weight:400;
+    line-height:33px;
+    color:#B8B5C1;
+    opacity:1;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 220px;
+}
+.detail_foot p span{
+    color: #0E042E;
+}
+.detail_foot p:nth-child(2){
+    text-align: right;
+}

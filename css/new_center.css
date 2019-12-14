@@ -1,0 +1,243 @@
+.head_box ul li:nth-child(3) a{
+    font-weight: 600;
+    color: #01AEFB;
+}
+.head_box ul li:nth-child(3) a:after {
+    height: 2px;
+    animation: ad_width .5s linear forwards;
+    background: #01AEFB;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    background: none;
+    transition: all 1s;
+}
+.HeadStyle{
+    background: #0E042E;
+    transition: all 1s;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+.bgbox{
+    min-width: 1200px;
+    padding-top: 80px;
+    background: url('../img/new_centerbg.png') no-repeat center top;
+    background-size: cover;
+    height: 529px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.bgbox p{
+    font-size: 55px;
+    color: rgba(250,250,250,0.8);
+}
+a:hover{
+    color:#0E042E;
+}
+
+.content{
+    background-color: #F7F8FC;
+    overflow: visible;
+    padding-bottom: 120px;
+    min-height: 700px;
+}
+
+.option{
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    height: 88px;
+    font-size: 24px;
+    padding: 0 189px;
+    box-sizing: border-box;
+    position: relative;
+    top: -44px;
+}
+.option p{
+    float: left;
+    line-height: 88px;
+    height: 88px;
+    margin-right: 146px;
+    color: #0E042E;
+    box-sizing: border-box;
+    position: relative;
+}
+.option p:hover{
+    font-weight: 600;
+}
+.option p:hover:after{
+    height: 2px;
+    background: #0E042E;
+    animation: ad_width .5s linear forwards;
+    content: ' ';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    transform: translate(-50%);
+}
+
+.option p:last-child{
+    margin: 0;
+}
+.current:after{
+    height: 2px;
+    background: #0E042E;
+    animation: ad_width .5s linear forwards;
+    content: ' ';
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    transform: translate(-50%);
+}
+.current{
+    font-weight: 600;
+}
+
+.news{
+    overflow: hidden;
+    width: 100%;
+    display: none;
+}
+.activity_news,.others_news{
+    height: 100%;
+    display: none;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 180px 233px;
+    box-sizing: border-box;
+}
+.news>a{
+    height: 228px;
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 16px;
+}
+.newbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 3px 5px 24px #EFF0F4;
+    transition: .3s cubic-bezier(.3,0,0,1.3);
+}
+.newbox:hover{
+    transform: scale(1.05);
+}
+.newbox img{
+    width: 306px;
+    height: 180px;
+    transition: all 0.6s;
+    object-fit: cover;
+}
+.newbox div{
+    margin-left: 35px;
+    margin-right: 74px;
+}
+.newbox div,.newbox div p,.newbox div span{
+    width: 580px;
+}
+.newbox div p{
+    font-size: 22px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.newbox div span{
+    display: block;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    margin-top: 34px;
+}
+.newbox>p{
+    border-left: 2px solid #F4F4F4;
+    height: 120px;
+    padding: 20px 0;
+    padding-left: 54px;
+    box-sizing: border-box;
+}
+.cRed{
+    color: #DD0812;
+}
+.news .box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.news .box img{
+    width: 200px;
+}
+.news .box p{
+    font-size: 20px;
+    color: #D7D8D8;
+    margin-top: 20px;
+    padding-left: 22px;
+}
+.newbox>p span{
+    font-size: 25px;
+    line-height: 25px;
+    height: 25px;
+    color: #CFCDD5;
+    display: block;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.newbox>p span:last-child{
+    margin-bottom: 0;
+}
+/* 分页 */
+#page{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    margin-bottom: 120px;
+    margin-top: 44px;
+    color: #0E042E;
+}
+.layui-laypage{
+    margin: 0;
+}
+.layui-laypage a, .layui-laypage span{
+    margin: 0;
+    border: none;
+    padding: 0;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    text-align: center;
+    margin-right: 4px;
+    font-size: 12px;
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em{
+    background: #0E042E;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+.layui-laypage a:hover {
+    color: #0E042E;
+}

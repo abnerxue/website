@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NAT--幸福宇宙中的Token--Token中的标杆&nbsp;&nbsp;&nbsp;&nbsp;</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/nat_economy.css">
+</head>
+
+<body>
+    <script language="javascript" type="text/javascript" src="./js/head.js"></script>
+    <div class="bgbox">
+        <p>NAT生态经济体</p>
+    </div>
+    <div class="content">
+        <div class="content_box">
+            <p class="title">关于NAT基金会</p>
+            <div id="certify">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/ppt1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/ppt2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/ppt3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/ppt4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/ppt5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/ppt6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <p class="ppt_download">
+                <span><a href="./download/NAT.pptx" download="NAT.pptx">查看全部PPT下载</a></span><i></i>
+            </p>
+            <div id="white_paper">
+                <div class="container2">
+                    <div class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <p class="ppt_download">
+                <span><a href="./article/policy_news03.html">查看全部白皮书</a></span><i style="background-image: url(./img/aright.png);"></i>
+            </p>
+        </div>
+    </div>
+
+    <script language="javascript" type="text/javascript" src="./js/foot.js"></script>
+</body>
+
+</html>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/public.js"></script>
+<script>
+    var imgHtml = '';
+    for(var i=1;i<=6;i++){
+        imgHtml+='<div class="swiper-slide"><img src="img/NatureToken/NatureToken'+ i +'.png" alt=""></div>'
+    }
+    $('#white_paper .swiper-wrapper').html(imgHtml);
+    // 导航栏背景颜色变换
+    if($(window).scrollTop()>80){
+        $('.head').addClass('HeadStyle')
+    }
+    var mySwiper =  new Swiper('#certify .swiper-container', {
+        watchSlidesProgress: true,
+        slidesPerView: 'auto',
+        noSwiping : true,
+        centeredSlides: true,
+        loop: true,
+        loopedSlides: 6,
+        autoplay: 3000,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        //paginationClickable :true,
+        onProgress: function (swiper, progress) {
+            for (i = 0; i < swiper.slides.length; i++) {
+                var slide = swiper.slides.eq(i);
+                var slideProgress = swiper.slides[i].progress;
+                modify = 1;
+                if (Math.abs(slideProgress) > 1) {
+                    modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                }
+                translate = slideProgress * modify * 260 + 'px';
+                scale = 1 - Math.abs(slideProgress) / 5;
+                zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                slide.css('zIndex', zIndex);
+                slide.css('opacity', 1);
+                if (Math.abs(slideProgress) > 3) {
+                    slide.css('opacity', 0);
+                }
+            }
+        },
+        onSetTransition: function (swiper, transition) {
+            for (var i = 0; i < swiper.slides.length; i++) {
+                var slide = swiper.slides.eq(i)
+                slide.transition(transition);
+            }
+        },
+        //处理分页器bug
+        onSlideChangeStart: function (swiper) {
+            if (swiper.activeIndex == 4) {
+                swiper.bullets.eq(9).addClass('swiper-pagination-bullet-active');
+                console.log(swiper.bullets.length);
+            }
+        }
+    });
+    var certifySwiper = new Swiper('#white_paper .container2', {
+        watchSlidesProgress: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        noSwiping : true,
+        loop: true,
+        loopedSlides: 6,
+        autoplay: 3000,
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next',
+        //paginationClickable :true,
+        onProgress: function (swiper, progress) {
+            for (i = 0; i < swiper.slides.length; i++) {
+                var slide = swiper.slides.eq(i);
+                var slideProgress = swiper.slides[i].progress;
+                modify = 1;
+                if (Math.abs(slideProgress) > 1) {
+                    modify = (Math.abs(slideProgress) - 1) * 0.6 + 1;
+                }
+                translate = slideProgress * modify * 240 + 'px';
+                scale = 1 - Math.abs(slideProgress) / 5;
+                zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                slide.css('zIndex', zIndex);
+                slide.css('opacity', 1);
+                if (Math.abs(slideProgress) > 3) {
+                    slide.css('opacity', 0);
+                }
+            }
+        },
+        onSetTransition: function (swiper, transition) {
+            for (var i = 0; i < swiper.slides.length; i++) {
+                var slide = swiper.slides.eq(i)
+                slide.transition(transition);
+            }
+        },
+        //处理分页器bug
+        onSlideChangeStart: function (swiper) {
+            if (swiper.activeIndex == 4) {
+                swiper.bullets.eq(9).addClass('swiper-pagination-bullet-active');
+                console.log(swiper.bullets.length);
+            }
+        }
+    });
+    
+    $(function () {
+        $(document).scroll(function() {
+            var scroH = $(document).scrollTop();  //滚动高度
+            var viewH = $(window).height();  //可见高度
+            var contentH = $(document).height();  //内容高度
+            $(window).scrollTop()
+            
+            if(scroH >80){  //距离顶部大于100px时
+                $('.head').addClass('HeadStyle')
+            }
+            if(scroH == 0){
+                $('.head').removeClass('HeadStyle');
+            }
+        });
+    })
+</script>

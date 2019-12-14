@@ -1,0 +1,223 @@
+.head_box ul li:nth-child(4) a{
+    font-weight: 600;
+    color: #01AEFB;
+}
+.head_box ul li:nth-child(4) a:after {
+    height: 2px;
+    animation: ad_width .5s linear forwards;
+    background: #01AEFB;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    background: none;
+    transition: all 1s;
+}
+.HeadStyle{
+    background: #0E042E;
+    transition: all 1s;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+.bgbox{
+    padding-top: 80px;
+    background: url(../img/strategybg.png) no-repeat center top;
+    height: 529px;
+    background-size: cover;
+    min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgbox p{
+    font-size: 55px;
+    color: rgba(250,250,250,0.8);
+}
+.content{
+    background: #F7F8FC;
+}
+
+.content>div{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+.content:nth-child(1){
+    padding-top: 0px;
+}
+.content:nth-child(2n){
+    background: #fff;
+}
+
+
+/* 愿景 */
+.wish>div{
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 35px 40px;
+    box-shadow: 0px 6px 16px #F8F8F8;
+}
+.wish>div p{
+    line-height: 22px;
+    font-size: 22px;
+    float: left;
+    font-family: 'SourceHanSansSC-regular';
+    width: 900px;
+    margin-bottom: 30px;
+    color: #0E042E;
+}
+.wish>div p:last-child{
+    margin: 0;
+}
+
+/* 行动 */
+
+.action_box{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.action_box>div{
+    width: 384px;
+    height: 235px;
+    padding: 0 36px;
+    margin: 0 12px;
+    box-sizing: border-box;
+    background: #fff;
+    padding-top: 80px;
+    position: relative;
+    box-shadow:0px 3px 6px #c4c4c4;
+}
+.action_box>div div{
+    width: 88px;
+    height: 88px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -44px;
+    left: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 3px 6px #C3C3C3;
+}
+
+.action_box>div p{
+    font-size: 22px;
+    line-height:33px;
+}
+/* NAT Genesis首次分配 */
+.distribution #cricle{
+    margin-top: 120px;
+    height: 800px;
+}
+
+.dis_content{
+    height: 410px;
+    color: rgba(16, 16, 16, 1);
+    font-size: 30px;
+    margin-top: 160px;
+    text-align: left;
+    overflow: hidden;
+    margin-bottom: 120px;
+    position: relative;
+}
+.dis_content p{
+    position: absolute;
+    width: 408px;
+    padding: 30px 35px;
+    font-size:24px;
+    box-shadow:0px 3px 6px rgba(196,196,196,0.16);
+    box-sizing: border-box;
+    line-height:33px;
+    transition: all .3s;
+}
+.dis_content p:hover{
+    transform: scale(1.05);
+}
+.dis_content p:nth-of-type(1){
+    top: 0;
+    left: 6px;
+}
+.dis_content p:nth-of-type(2){
+    top: 0;
+    right: 6px;
+}
+.dis_content p:nth-of-type(3){
+    width:636px;
+    bottom: 6px;
+    left: 282px;
+}
+.dis_content>img{
+    position: absolute;
+    top: 60px;
+    left: 536px;
+}
+.dis_content>div{
+    position: absolute;
+}
+
+.dis_content div:nth-of-type(1){
+    top: 30px;
+    left: 403px;
+}
+.dis_content div:nth-of-type(2){
+    top: 70px;
+    right: 404px;
+}
+.dis_content div:nth-of-type(3){
+    left: 594px;
+    top: 135px;
+}
+.dis_content div:nth-of-type(1):after {
+    animation: living 3s linear infinite;
+    width: 16px;
+    height: 16px;
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: #0062FE;
+    border-radius: 50%;
+}
+.dis_content div:nth-of-type(2):after {
+    animation: living 3s linear infinite;
+    width: 16px;
+    height: 16px;
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background: #0062FE;
+    border-radius: 50%;
+}
+.dis_content div:nth-of-type(3):after {
+    animation: living 3s linear infinite;
+    width: 16px;
+    height: 16px;
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    right: 3px;
+    background: #0062FE;
+    border-radius: 50%;
+}
+@keyframes living {
+    0%{
+        transform: scale(1);
+        opacity: 0.5;  
+    }
+    50%{
+        transform: scale(1.8);  
+        opacity: 0;   /*圆形放大的同时，透明度逐渐减小为0*/
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}

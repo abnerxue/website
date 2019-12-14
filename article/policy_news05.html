@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NAT--幸福宇宙中的Token--Token中的标杆&nbsp;&nbsp;&nbsp;&nbsp;</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/new_detail.css">
+</head>
+<style>
+    .head_box ul li:nth-child(3) a{
+        font-weight: 600;
+        color: #01AEFB;
+    }
+    .head_box ul li:nth-child(3) a:after {
+        height: 2px;
+        animation: ad_width .5s linear forwards;
+        background: #01AEFB;
+    }
+</style>
+<body>
+    <div class='head'>
+        <div class='head_box'>
+            <div class='logo'>
+                <img src='../img/logo.png' alt=''>
+                <p>
+                    <span>NAT（新加坡）基金会</span>
+                    <span>NAT FOUNDATION PTE.LTD.</span>
+                </p>
+            </div>
+            <ul>
+                <li class='select'><a href='../index.html'>首页</a></li>
+                <li><a href='../nat_economy.html'>NAT生态经济体</a></li>
+                <li><a href='../new_center.html'>新闻中心</a></li>
+                <li><a href='../strategy.html'>战略规划</a></li>
+                <li><a href='../scenarios.html'>应用场景</a></li>
+                <li><a href='../information.html'>区块链信息</a></li>
+                <li><a href='../technical.html'>技术支持</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bgbox">
+        <p>新闻中心</p>
+    </div>
+    <div class="content">
+        <div class="content_box">
+            <div class="detail_title">
+                <p>NAT基金会公告002号</p>
+                <span>2019-12-11 15:16</span>
+            </div>
+            <div class="detail_content">
+                <img src="../img/policy_news05.jpg" alt="">
+            </div>
+            <!-- <div class="detail_foot">
+                <p>
+                    上一篇：
+                    <span><a href="policy_news04.html">中国最近公布的区块链政策为什么具有重大的意义</a></span>
+                </p>
+                <p>
+                    下一篇：
+                    <span>暂无文章</span>
+                </p>
+            </div> -->
+        </div>
+    </div>
+    <div class='foot'>
+        <div class='foot_box'>
+            <div>
+                <p>便捷入口</p>
+                <span><a href='../nat_economy.html'>NAT生态经济体</a></span>
+                <span><a href='../strategy.html'>战略规划</a></span>
+                <span><a href='../scenarios.html'>应用场景</a></span>
+            </div>
+            <div>
+                <p>联系我们</p>
+                <span>企业地址：新加坡贝雅勒巴路60号贝雅勒巴广场08-55号</span>
+                <span>Address：60 PAYA LEBAR ROAD#08-55 PAYA LEBAR SQUARE SINGAPORE</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/public.js"></script>
+<script>
+// 导航栏背景颜色变换
+if($(window).scrollTop()>80){
+        $('.head').addClass('HeadStyle')
+    }
+    $(function() {
+        // 导航栏背景颜色变换
+        $(document).scroll(function() {
+            var scroH = $(document).scrollTop();  //滚动高度
+            var viewH = $(window).height();  //可见高度
+            var contentH = $(document).height();  //内容高度
+            $(window).scrollTop()
+            
+            if(scroH >80){  //距离顶部大于100px时
+                $('.head').addClass('HeadStyle')
+            }
+            if(scroH == 0){
+                $('.head').removeClass('HeadStyle');
+            }
+        });
+    })
+</script>

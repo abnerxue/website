@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NAT--幸福宇宙中的Token--Token中的标杆&nbsp;&nbsp;&nbsp;&nbsp;</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="./css/scenarios.css">
+</head>
+<body>
+    <script language="javascript" type="text/javascript" src="./js/head.js"></script>
+    <div class="bg"></div>
+    <div class="content">
+        <div class="app">
+            <img src="./img/app-logo.png" alt="">
+            <p>
+                <span>杏福宝</span>
+                <span>让幸福如影随形</span>
+            </p>
+        </div>
+        <p>杏福宝：为NAT项目首个应用场景。杏福宝APP是基于区块链底层技术开发的创新性商业应用，以“链上祭祀”、“链上家谱”、“人生档案”为切入点，以区块链通证NAT作为激励，来推广相关的产品和服务，在链上记录人民大众自己的历史，让中国传统文化，孝道文化发扬光大，世代流传。</p>
+        <p class="load">即将上线....</p>
+        <div class="qcode">
+            <p>
+                <img src="" alt="">
+                <span>IOS下载二维码</span>
+            </p>
+            <p>
+                <img src="" alt="">
+                <span>安卓下载二维码</span>
+            </p>
+        </div>
+        <div class="phone">
+            <img src="./img/phone.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/public.js"></script>
+<script>
+    // 导航栏背景颜色变换
+    if($(window).scrollTop()>80){
+        $('.head').addClass('HeadStyle')
+    }
+    $(function() {
+        $(document).scroll(function() {
+            var scroH = $(document).scrollTop();  //滚动高度
+            var viewH = $(window).height();  //可见高度
+            var contentH = $(document).height();  //内容高度
+            $(window).scrollTop()
+            
+            if(scroH >80){  //距离顶部大于100px时
+                $('.head').addClass('HeadStyle')
+            }
+            if(scroH == 0){
+                $('.head').removeClass('HeadStyle');
+            }
+        });
+    })
+</script>

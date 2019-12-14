@@ -1,0 +1,257 @@
+.head_box ul li:nth-child(2) a{
+    font-weight: 600;
+    color: #01AEFB;
+}
+.head_box ul li:nth-child(2) a:after {
+    height: 2px;
+    animation: ad_width .5s linear forwards;
+    background: #01AEFB;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    background: none;
+    transition: all 1s;
+}
+.HeadStyle{
+    background: #0E042E;
+    transition: all 1s;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+.bgbox{
+    padding-top: 80px;
+    background: url(../img/nat_economybg.png) no-repeat center top;
+    height: 529px;
+    background-size: cover;
+    min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.bgbox p{
+    font-size: 55px;
+    color: rgba(250,250,250,0.8);
+}
+.content{
+    overflow: hidden;
+}
+
+.right-bt{
+    position: absolute;
+    right: 15px;
+    top: 43%;
+    z-index: 10;
+    width: 24px;
+    height: 44px;
+    background: url(../img/arrow_r.png) no-repeat;
+    background-size: 100% 100%;
+}
+.left-bt{
+    position: absolute;
+    left: 15px;
+    top: 43%;
+    z-index: 10;
+    width: 24px;
+    height: 44px;
+    background: url(../img/arrow_l.png) no-repeat;
+    background-size: 100% 100%;
+}
+.ppt_download{
+    text-align: right;
+    font-family: 'SourceHanSansSC-regular';
+    line-height: 23px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.ppt_download a{
+    color: #0E042E;
+    font-size: 18px;
+    float: left;
+}
+.ppt_download i{
+    background: url(../img/download.png) no-repeat;
+    float: right;
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+.ppt_download span{
+    float: right;
+}
+.content_box p:nth-of-type(2){
+    margin-bottom: 40px;
+}
+
+
+#certify {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto
+}
+
+#certify .swiper-container{
+    padding: 40px 0;
+    padding-bottom: 60px;
+}
+
+#certify .swiper-slide {
+	width: 700px;
+	height: 408px;
+	background: #fff;
+    box-shadow: 0 3px 14px #4a4a4aad;
+}
+#certify .swiper-slide img{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+#certify .swiper-slide p {
+	line-height: 98px;
+	padding-top: 0;
+	text-align: center;
+	color: #636363;
+	font-size: 1.1em;
+	margin: 0;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 30px;
+}
+#certify .swiper-button-prev,#certify .swiper-button-next,#white_paper .swiper-button-next,#white_paper .swiper-button-prev{
+    color: #0E042E;
+    width: 30px !important;
+    height: 30px !important;
+}
+#certify .swiper-pagination {
+	width: 100%;
+    bottom: 20px;
+    
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 5px;
+	border: 3px solid #fff;
+	background-color: #d5d5d5;
+	width: 10px;
+	height: 10px;
+	opacity: 1;
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
+	border: 3px solid #00aadc;
+	background-color: #fff;
+}
+
+#certify .swiper-button-prev {
+	left: -30px;
+	width: 45px;
+	height: 45px;
+	background-position: 0 0;
+	background-size: 100%;
+}
+
+#certify .swiper-button-prev:hover {
+	background-position: 0 -46px;
+	background-size: 100%
+}
+
+#certify .swiper-button-next {
+	right: -30px;
+	width: 45px;
+	height: 45px;
+	background-position: 0 -93px;
+	background-size: 100%;
+}
+
+#certify .swiper-button-next:hover {
+	background-position: 0 -139px;
+	background-size: 100%
+}
+
+
+
+#white_paper {
+	position: relative;
+	width: 1200px;
+    margin: 0 auto;
+}
+#white_paper .container2{
+    overflow: hidden;
+    padding: 40px 0;
+    padding-bottom: 60px;
+    --swiper-theme-color: #0E042E;/* 设置Swiper风格 */
+    --swiper-navigation-color: #0E042E;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 30px;/* 设置按钮大小 */
+}
+#white_paper .swiper-container {
+    padding-bottom: 60px;
+}
+
+#white_paper .swiper-slide {
+	width: 600px;
+	height: 840px;
+	background: #fff;
+	box-shadow: 0 3px 14px #9494942e;
+}
+#white_paper .swiper-slide img{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+#white_paper .swiper-slide p {
+	line-height: 98px;
+	padding-top: 0;
+	text-align: center;
+	color: #636363;
+	font-size: 1.1em;
+	margin: 0;
+}
+
+#white_paper .swiper-pagination {
+	width: 100%;
+	bottom: 20px;
+}
+
+#white_paper .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 5px;
+	border: 3px solid #fff;
+	background-color: #d5d5d5;
+	width: 10px;
+	height: 10px;
+	opacity: 1;
+}
+
+#white_paper .swiper-pagination-bullets .swiper-pagination-bullet-active {
+	border: 3px solid #00aadc;
+	background-color: #fff;
+}
+
+#white_paper .swiper-button-prev {
+	left: -30px;
+	width: 45px;
+	height: 45px;
+	background-position: 0 0;
+	background-size: 100%;
+}
+
+#white_paper .swiper-button-prev:hover {
+	background-position: 0 -46px;
+	background-size: 100%
+}
+
+#white_paper .swiper-button-next {
+	right: -30px;
+	width: 45px;
+	height: 45px;
+	background-position: 0 -93px;
+	background-size: 100%;
+}
+
+#white_paper .swiper-button-next:hover {
+	background-position: 0 -139px;
+	background-size: 100%
+}

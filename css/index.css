@@ -1,0 +1,133 @@
+.head_box ul li:nth-child(1) a{
+    font-weight: 600;
+    color: #01AEFB;
+}
+.head_box ul li:nth-child(1) a:after {
+    height: 2px;
+    animation: ad_width .5s linear forwards;
+    background: #01AEFB;
+}
+@keyframes ad_width {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+.content{
+    overflow: hidden;
+}
+.content_box{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.aboutNAT{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.aboutNAT div{
+    width: 1044px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 22px;
+    padding: 24px 30px;
+    line-height: 34px;
+    box-sizing: border-box;
+    color: #0E042E;
+    box-shadow:0px 3px 6px #c4c4c4;
+    transition: all .3s;
+}
+.aboutNAT div:hover{
+    transform: scale(1.05);
+}
+.certificate{
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 515px;
+    height: 728px;
+    box-shadow: 0px 4px 4px #c3c3c324;
+    transition: all .3s;
+}
+.certificate img{
+    display: block;
+    width: 515px;
+    height: 728px;
+}
+.certificate:hover{
+    transform: scale(1.05);
+
+}
+.trends{
+    background: #F7F8FC;
+    overflow: hidden;
+}
+.trends_box{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.trends_content{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 75px;
+}
+.trends_content div{
+    width: 384px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+}
+.trends_content div img{
+    width: 100%;
+    height: 260px;
+    box-sizing: border-box;
+    background: burlywood;
+    display: block;
+}
+.trends_content div p{
+    color: #101010;
+    font-family: 'SourceHanSansSC-bold';
+    height: 65px;
+    line-height: 65px;
+    padding: 0 16px;
+}
+.trends_content div p span{
+    float: left;
+    font-size: 22px;
+    line-height: 65px;
+    color: #0E042E;
+    font-weight: 600;
+}
+.trends_content div a{
+    float: right;
+    font-size: 16px;
+    color: #100630;
+    line-height: 65px;
+}
+.trends_content div a i{
+    float: right;
+    width: 8px;
+    height: 15px;
+    background: url(../img/arrow_r.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 26px;
+    margin-left: 5px;
+}
+.layui-carousel{
+    min-width: 1200px;
+}
+.layui-carousel>[carousel-item] img{
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px;
+    position: relative;
+    
+}

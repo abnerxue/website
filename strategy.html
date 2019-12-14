@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NAT--幸福宇宙中的Token--Token中的标杆&nbsp;&nbsp;&nbsp;&nbsp;</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/strategy.css">
+</head>
+<body>
+    <script language="javascript" type="text/javascript" src="./js/head.js"></script>
+    <div class="bgbox">
+        <p>战略规划</p>
+    </div>
+    <div class="content">
+        <div class="wish">
+            <p class="title">我们的愿景</p>
+            <div>
+                <p>1+1推广营运与创始生态合伙人</p>
+                <p>上千家应用生态合伙人</p>
+                <p>十年内创造和复制不少于10家具有内生动力的生态基地</p>
+                <p>百万家庭、千万级NAT消费、经营、投资、应用、交易的推广者、经营者、投资者</p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="action">
+            <p class="title">我们的行动</p>
+            <div class="action_box">
+                <div>
+                    <div>
+                        <img src="./img/action1.png" alt="">
+                    </div>
+                    <p>基金会发行NAT后会立即锚定一家有实力和张力的幸福产业标杆实体企业</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./img/action2.png" alt="">
+                    </div>
+                    <p>企业将可应用、交易不低于50亿美元实物资产作为NAT未来交易和价值的应用的支撑</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./img/action3.png" alt="">
+                    </div>
+                    <p>未来，NAT基金会还将源源不断增加锚定的实体机制以充实NAT内涵价值</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="distribution">
+            <p class="title">NAT Genesis首次分配</p>
+            <div id="cricle"></div>
+            <div class="dis_content">
+                <p>私募、基金会、团队、项目预留的所有NAT都实行锁仓线性解锁模式</p>
+                <p>NAT启动交易、消费、应用后，采用消费及项目部分收益回购双通缩模型</p>
+                <p>NAT总量通缩到6,193,690,081枚后，将不再通缩，并永久保持此合理数量，以满足应用中的合理的流动性需求，保证NAT在幸福产业中具有较好的含金量</p>
+                <img src="./img/distribution_01.png" alt="">
+                <div>
+                    <img src="./img/distribution_02.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/distribution_03.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/distribution_04.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript" src="./js/foot.js"></script>
+    <script src="./js/echarts.min.js"></script>
+</body>
+</html>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/public.js"></script>
+<script>
+    //饼状图
+    echarts.init(document.getElementById('cricle')).setOption({
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient: 'vertical',
+            left: 'left',
+            top: 'top',
+            icon: 'circle',
+            itemWidth: 36,             // 图例图形宽度
+            itemHeight: 36,
+            // formatter: ['Staking奖励预留:3,096,845,041','团队持有:3,096,845,041','私募+IEO:495,495,206','基金会持有:1,238,738,016','项目预留以推广:867,116,611'].join('\n'),
+            formatter: function (name) {
+                let arr;
+                let list=[{name:'Staking奖励预留',value:'3,096,845,040.5'},{name:'团队持有',value:'495,495,206.48'},{name:'私募+IEO',value:'495,495,206.48'},{name:'基金会持有',value:'1,238,738,016.2'},{name:'项目预留推广',value:'867,116,611.34'}]
+                let index=0;
+                list.forEach((item,i)=>{
+                if(item.name == name){
+                    index = i;
+                }
+                });
+                arr = [name,'：'+list[index].value+"枚"]
+                return arr.join('');
+            },
+            data: ['Staking奖励预留','团队持有','私募+IEO','基金会持有','项目预留推广'],
+            textStyle: { //图例文字的样式
+                color: '#101010',
+                fontSize: 28,
+                lineHeight: 56,
+            },
+        },
+        title:{
+            text:'NAT总量：6,193,690,081枚',
+            top:'bottom',
+            right:'32%',
+            textStyle:{
+                fontSize: 28,
+                fontWeight: '#101010',
+                color: '#333'
+            },
+        },
+        color:['#102BC3','#1F49E7','#2668FB','#85ABFC','#C0D3FD'], 
+        tooltip: {
+            show: false,
+        },
+        series : [
+            {
+                name: '',
+                type: 'pie',
+                radius : '75%',
+                center: ['70%', '50%'],
+                data:[
+                    {value:3096845040.5, name:'Staking奖励预留'},
+                    {value:495495206.48, name:'私募+IEO'},
+                    {value:1238738016.2, name:'基金会持有'},
+                    {value:495495206.48, name:'团队持有'},
+                    {value:867116611.34, name:'项目预留推广'}
+                ],
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'inner',
+                        formatter: '{b}\n'+'{d}%',
+                        fontSize: 15
+                    },
+                }
+            }
+        ]
+
+    });
+    // 导航栏背景颜色变换
+    if($(window).scrollTop()>80){
+        $('.head').addClass('HeadStyle')
+    }
+    $(function(){
+        $(document).scroll(function() {
+            var scroH = $(document).scrollTop();  //滚动高度
+            var viewH = $(window).height();  //可见高度
+            var contentH = $(document).height();  //内容高度
+            $(window).scrollTop()
+            
+            if(scroH >80){  //距离顶部大于100px时
+                $('.head').addClass('HeadStyle')
+            }
+            if(scroH == 0){
+                $('.head').removeClass('HeadStyle');
+            }
+        });
+    })
+</script>

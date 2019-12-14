@@ -1,0 +1,159 @@
+html,body{
+    position: relative;
+}
+.head_box ul li:nth-child(5) a{
+    font-weight: 600;
+    color: #01AEFB;
+}
+.head_box ul li:nth-child(5) a:after {
+    height: 2px;
+    animation: ad_width .5s linear forwards;
+    background: #01AEFB;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    background: none;
+    transition: all 1s;
+    z-index: 22;
+}
+.HeadStyle{
+    background: #0E042E;
+    transition: all 1s;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+.bg{
+    width: 100%;
+    min-width: 1200px;
+    color: #cfcfcf;
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: url(../img/scenarios.png) no-repeat center top;
+    background-size: cover;
+    animation: 2s scaleIn cubic-bezier(.215,.61,.355,1) 1;
+    z-index: -1;
+}
+@keyframes scaleIn{
+    from {
+        transform: scale(2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    height: 900px;
+    overflow: hidden;
+    padding-top: 80px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+.content>p{
+    width: 750px;
+    color: #fff;
+    text-align: left;
+    font-size:24px;
+    font-family:PingFang SC;
+    font-weight:400;
+    line-height:33px;
+    animation: 2s leftIn cubic-bezier(.215,.61,.355,1) 1;
+}
+
+.app{
+    width: 750px;
+    overflow: hidden;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 35px;
+    animation: 2s leftIn cubic-bezier(.215,.61,.355,1) 1;
+}
+@keyframes leftIn{
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.app img{
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.app span:nth-child(1){
+    display: block;
+    height:45px;
+    font-size:32px;
+    font-family:PingFang SC;
+    font-weight:600;
+    line-height:45px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.app span:nth-child(2){
+    display: block;
+    height:40px;
+    font-size:28px;
+    font-family:PingFang SC;
+    font-weight:500;
+    line-height:40px;
+    color:#fff;
+}
+.qcode{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+    display: none;
+    padding: 10px;
+    animation: 2s leftIn cubic-bezier(.215,.61,.355,1) 1;
+}
+.qcode p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+}
+.qcode p img{
+    width: 200px;
+    height: 200px;
+    background: #fff;
+}
+.qcode p span{
+    text-align: left;
+    margin-top: 14px;
+    font-size:20px;
+    font-family:PingFang SC;
+    font-weight:400;
+    line-height:28px;
+    color:#fff;
+}
+.phone{
+    position: absolute;
+    top: 158px;
+    right: 56px;
+    z-index: 1;
+    width: 300px;
+    animation: 2s leftIn cubic-bezier(.215,.61,.355,1) 1;
+}
+.phone img{
+    width: 100%;
+}
+.load{
+    margin-top: 30px;
+}
